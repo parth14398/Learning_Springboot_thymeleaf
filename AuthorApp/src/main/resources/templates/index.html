@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Welcome to Author Details Website</h1>
+<a  href="Author.html">Authors</a>
+<br>
+<br>
+<form th:action="@{/Author.html}"  th:object="${inquiry}"  method="post">
+
+  <lable>Search</lable><input type="text" th:field="*{searchString}" placeholder="Search" >
+  <button type="submit" name="submit">submit</button>
+
+</form>
+
+</body>
+</html>

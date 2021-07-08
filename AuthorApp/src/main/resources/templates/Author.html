@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:th="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title></title>
+  </head>
+  <body>
+    <h1>Author Details</h1>
+    <div class="outer-div">
+      <div class="inner-div" th:each="author:${authors}">
+        <img th:src="@{${author.profilePic}}" alt="parthimage">
+        <h2><span th:text="${author.name}"/></h2>
+        <p><span th:text="${author.authorInformation}"/></p>
+      </div>
+
+    </div>
+  </body>
+</html>
